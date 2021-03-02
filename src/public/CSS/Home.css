@@ -50,8 +50,8 @@ h3{
 }
 
 .main-intro{
-  height:300px;
-  background: linear-gradient(rgb(134, 134, 134), #aa8585);
+  height:750px;
+  background: linear-gradient(rgb(238, 234, 234), #7e7e7e);
   /* background-image: url("https://i.ibb.co/599hXys/brown-wood-texture-dark-wooden-abstract-background.jpg"); */
 }
 
@@ -87,8 +87,93 @@ h3{
 }
 
 .intro-txt{
-  padding:1rem;
-  font-size:1.4rem;
-  word-spacing: 2px;
+  padding:.5rem;
+  font-size:1.8rem;
+  word-spacing: 5px;
   text-align: center;
+  color:white;
+  letter-spacing: 2px;
+  text-shadow: black .1rem .1rem .1rem;
+  
+}
+
+.intro-txt-2{
+  padding:2rem;
+  color:white;
+  font-size:1.5rem;
+  font-weight: 500;
+  text-shadow: black .1rem .1rem .1rem;
+  text-align: center;
+}
+
+.intro-trio{
+  /* background-image: url("https://i.ibb.co/vspnRwr/Trio.png"); */
+  width:101%;
+  padding:1em;
+  margin-top:3em;
+  margin-left:-.4rem;
+}
+
+.main-gradient{
+  height:25px;
+  background: linear-gradient(#eccccc, rgb(128, 37, 37));
+}
+.main-second, .main-fourth, .main-fifth{
+  height:auto;
+  width:100%;
+  border:inset 2px rgb(14, 14, 70);
+
+}
+
+.main-second-over, .main-third-over, .main-fourth-over, .main-fifth-over{
+  height:280px;
+  /* width:50%; */
+  /* position: relative;
+  bottom:60px;
+  left:0; */
+  color:white;
+  background-color: rgb(42, 54, 65);
+  padding:2.2em;
+  opacity: 98%;
+  /* margin-bottom:1em; */
+  border: none inset 2px rgb(14, 14, 70);
+  box-shadow: black 2px 2px 2px;
+}
+
+.main-second-txt, .main-third-title, .main-fourth-title, .main-fifth-title{
+  font-size:1.6rem;
+  display:flex;
+  justify-content: center;
+}
+
+.main-second-txt2, .main-third-txt, .main-fourth-txt, .main-fifth-txt{
+  font-size:1.2rem;
+  text-align:start;
+}
+
+.main-third{
+  width:100%;
+  border:inset 2px rgb(14, 14, 70);
+}
+
+.main-third-over{
+  background:rgb(14, 14, 70);
+}
+
+.main-fourth-over{
+  background: rgb(71, 15, 15);
+}
+
+.main-fifth-over{
+  background: rgb(31, 5, 53);
+  color:white;
+}
+
+.footer{
+  height:200px;
+  background:#252526;
+  color:white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
