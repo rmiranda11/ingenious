@@ -1,38 +1,65 @@
 import React, { useState } from 'react';
-import Button from '@material-ui/core/Button';
-import ButtonGroup from '@material-ui/core/ButtonGroup';
-import { makeStyles } from '@material-ui/core/styles';
+import Button from 'react-bootstrap/Button';
+import ButtonGroup from 'react-bootstrap/ButtonGroup';
+// import { makeStyles } from '@material-ui/core/styles';
 
 import "../public/CSS/Services.css"
 
-
+const framing = (
+    <div className="framing card">
+        <h1 className="card-title">Framing</h1>
+        <img src="https://i.ibb.co/VSjPCgh/OLYMPUS-DIGITAL-CAMERA.jpg"className="card-pic"></img>
+        <p className="card-txt">Building to last is what we take pride in. We accommodate to a big range of job requirements. You pick the design and we'll execute it for you. Using either balloon or platform styles of framing we will accomplish the task.</p>
+    </div>
+)
+const decks = (
+    <div className="decks card">
+        <h2>Decks business</h2>
+    </div>
+)
+const porches = (
+    <div className="frameCard">
+        <h2>Porches business</h2>
+    </div>
+)
+const staircase = (
+    <div className="frameCard">
+        <h2>Porches business</h2>
+    </div>
+)
+const additions = (
+    <div className="frameCard">
+        <h2>Porches business</h2>
+    </div>
+)
+const fences = (
+    <div className="frameCard">
+        <h2>Porches business</h2>
+    </div>
+)
 
 const Services = () => {
 
-    const [hover, setHover] = useState(false)
+    const [buttons, setButtons] = useState("framing")
 
-    const toggleHover = () => {
-        console.log(hover)
-        setHover(!hover) 
-    }
+
+    const handleClick = value => {
+        setButtons(value)
+    };
+
     const useStyles = {
         
-        color:"black",
+        color:"white",
         fontSize:"0.95rem",
         width:"7em",
+        height:"4em",
         fontWeight:700,
-        border:"solid 1px lightSeagreen",
-        borderTopStyle:"none",
-        borderBottomStyle:"none",
-        ":hover": {
-            background:"blue",
-        }
-    
-
     }
 
+
+
     return (
-        <div>
+        <div className="custom-container container-md">
             <div className="row">
                 <div className="col-sm-12">
                     <div className="services-container">
@@ -45,21 +72,42 @@ const Services = () => {
             <div className="row">
                 <div className="col-sm-12">
                     <div className="services-btn-group">
-                    <ButtonGroup variant="text" className="btn-group" size="large" color="primary"  aria-label="large outlined primary button group">
-                        <Button 
-                        onClick={toggleHover}
+
+                    <ButtonGroup className="btn-group" size="large" color="primary">
+                        <Button onClick={()=> handleClick("framing")} 
                         style={useStyles}>Framing</Button>
-                        <Button style={useStyles}>Decks</Button>
-                        <Button style={useStyles}>Porches</Button>
+
+                        <Button onClick={() => handleClick("decks")} 
+                        style={useStyles}>Decks</Button>
+
+                        <Button onClick={() => handleClick("porches")} 
+                        style={useStyles}>Porches</Button>
                     </ButtonGroup>
-                    <ButtonGroup variant="text" className="btn-group" size="large" color="primary" aria-label="large outlined primary button group">
-                        <Button style={useStyles}>Fences</Button>
-                        <Button style={useStyles}> Staircase </Button>
-                        <Button style={useStyles}>Additions</Button>
+
+                    <ButtonGroup className="btn-group" size="large" color="primary">
+                        <Button onClick={()=> handleClick("staircase")} 
+                        style={useStyles}>Staircases</Button>
+
+                        <Button onClick={() => handleClick("additions")} 
+                        style={useStyles}>Additions</Button>
+
+                        <Button onClick={() => handleClick("fences")} 
+                        style={useStyles}>Fences</Button>
                     </ButtonGroup>
+               
                     </div>
-                    <div className="services-main">
-                        <h2>What we Do</h2>
+                    <div className="row">
+                        <div className="col-sm-12">
+                        <div className="services-main">
+                            {buttons === "framing" && framing}
+                            {buttons === "decks" && decks}
+                            {buttons === "porches" && porches}
+                            {buttons === "staircase" && staircase}
+                            {buttons === "additions" && additions}
+                            {buttons === "fences" && fences}
+
+                        </div>
+                        </div>
                     </div>
                 </div>
 

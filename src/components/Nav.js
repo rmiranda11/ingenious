@@ -83,12 +83,12 @@ export default function Nav() {
 
   return (
     <div>
-      {['Ingenious Construction'].map((anchor) => (
+      {['bottom'].map((anchor) => (
         <React.Fragment key={anchor}>
     <AppBar position="static">
         <Toolbar style={{background:"black"}}>
-          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-            <MenuIcon onClick={toggleDrawer(anchor, true)} />
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={toggleDrawer(anchor, true)}>
+            <MenuIcon  />
           </IconButton>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>

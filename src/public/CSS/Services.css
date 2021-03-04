@@ -1,4 +1,7 @@
 
+.custom-container{
+    padding:0;
+}
 .services-container{
     background-image:url("https://i.ibb.co/8xqFYCx/wood2.jpg");
     background-size: cover;
@@ -25,13 +28,14 @@
 .services-main{
     width:100%;
     height:inherit;
-    background:rgba(219, 27, 27, 0.493);
+    /* background:rgba(219, 27, 27, 0.493); */
     /* background-image: url("https://i.ibb.co/G3Mb6mV/aanischaaukamikw-cultural-cree-institute-58150fd2dc96b.jpg"); */
     background-size:cover;
     padding:2em;
     display:flex;
     justify-content: center;
-    opacity:75%
+    /* opacity:75% */
+    color:black;
 }
 
 .services-space{
@@ -41,9 +45,39 @@
 }
 
  .services-btn-group{
-   
+    margin:1em;
+    width:7em;
+    background:whitesmoke;
+    justify-self: center;
+    flex-wrap: wrap;    
+    display: flex;
+    /* justify-content: center; */
 }
 
+.card{
+    width:100%;
+    height:auto;
+    padding:2em;
+}
+
+.card-pic{
+    background-image: url("https://i.ibb.co/VSjPCgh/OLYMPUS-DIGITAL-CAMERA.jpg" );
+    background-size: cover;
+    width:100%;
+    height:200px;
+}
+
+.card-title{
+    font-size:2.2rem;
+    color:lightseagreen;
+    display: flex;
+    justify-content: center;
+}
+
+.card-txt{
+    font-size:1.2rem;
+    padding:1em;
+}
 /* Button{
     width:7em;
     display:flex;
