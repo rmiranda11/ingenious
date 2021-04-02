@@ -1,18 +1,20 @@
+const path = require('path');
+require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 const creds = require('./constants/config');
 
-// const result = dotenv.config()
+
 //465
 var transport = {
     host: 'smtp.gmail.com', 
     port: 587,
     secure: false,
     auth: {
-        user: creds.USER,
-        pass: creds.PASS
+        user: process.env.USER,
+        pass: process.env.PASS
   },
     tls: {
         // do not fail on invalid certs
@@ -39,7 +41,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: creds.USER, 
+    to: process.env.USER, 
     subject: 'New Message from Ingenious Construction Website',
     text: content
   }
@@ -54,10 +56,10 @@ router.post('/send', (req, res, next) => {
       })
   
       transporter.sendMail({
-        from:creds.USER,
+        from:process.env.USER,
         to: email,
         subject: "Ingenious Construction <Auto reply>",
-        text: `Thank you for your message. We will get in contact with you as soon as possible. \n\n Ingenious Construction `
+        text: `Thank you for your message. We will get in contact with you as soon as possible.\n ${name} \n${message}  \n\n Ingenious Construction `
       }, function(error, info){
         if(error) {
           console.log(error);

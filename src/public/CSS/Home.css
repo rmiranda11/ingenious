@@ -51,7 +51,8 @@
 }
 
 .MuiListItem-gutters{
-  font-size:2rem;
+  font-size:1.7rem;
+
 }
 
 .main-intro{
@@ -238,6 +239,12 @@
   display:flex;
   justify-content: center;
   align-items: center;
+}
+
+.foot{
+  display: flex;
+  justify-content:center;
+  margin-left:-1em;
 }
   }
 /* ///////////////// Desktop End /////////////////////// */

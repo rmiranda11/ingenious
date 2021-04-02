@@ -30,6 +30,7 @@ const Main = () => {
                         className="cta-btn">Message Us</Button>
                 </div>
             </div>
+            
             <div className="row">
                 <div className="col-sm-12">
                     <div className="main-intro">
@@ -41,7 +42,7 @@ const Main = () => {
             </div>
             <div className="main-gradient"></div>
             <div className="row">
-                <div className="main-content">
+                <div className="main-content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1200">
                     <img className="col-lg-6 main-second" src="https://i.ibb.co/LJSGGzc/men2.png"></img>
                     <div className="col-lg-6 main-second-over">
                         <p className="main-second-txt"><a>Precision</a></p><span className="accent-bar"></span>
@@ -50,7 +51,7 @@ const Main = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="main-content reverse">
+                <div className="main-content reverse" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                 <img className="col-lg-6 main-third" src="https://i.ibb.co/mGqTYxB/woman.png"></img>
                 
                     <div className="col-lg-6 main-third-over">
@@ -60,7 +61,7 @@ const Main = () => {
                 </div>  
             </div>
             <div className="row">
-                <div className="main-content">
+                <div className="main-content" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                 <img className="col-lg-6 main-fourth" src="https://i.ibb.co/kqKP6yj/man.png"></img>
                 
                     <div className="col-lg-6 main-fourth-over">
@@ -70,12 +71,12 @@ const Main = () => {
                 </div>
             </div>
             <div className="row">
-                <div className="main-content reverse">
+                <div className="main-content reverse" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                 <img className="col-lg-6 main-fifth" src="https://i.ibb.co/dp5CLpj/man2.png"></img>
                 
 
                 <div className="col-sm-12">
-                    <div className="main-fifth-over">
+                    <div className="main-fifth-over" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1000">
                         <p className="main-fifth-title"><a>Mastery</a></p><span className="accent-bar accent-bar-mastery accent-bar-mastery-pad"></span>
                         <p className="main-fifth-txt">Our biggest core belief is delivering the absolute best quality. Not only do we acheive that but we supersede all of your expectations.</p>
                     </div>

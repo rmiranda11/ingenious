@@ -252,7 +252,8 @@
 .btn-group{
     margin-top:-1rem;
     text-align: center;
-    width:22em;
+    margin-left:1em;
+    width:20em;
     /* margin-bottom:2rem; */
 }
 
@@ -264,8 +265,13 @@
     display: flex;
     margin-left:.5em;
     margin-top:2em;
-    
+    width:20em;
+
     /* justify-content: center; */
+}
+
+.service-btn{
+    width:20em;
 }
 
 .card{

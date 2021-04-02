@@ -108,7 +108,7 @@ const Services = () => {
                     </div>
                     <div className="row">
                         <div className="col-sm-12">
-                        <div className="services-main">
+                        <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700" className="services-main">
                             {buttons === "framing" && framing}
                             {buttons === "decks" && decks}
                             {buttons === "porches" && porches}
