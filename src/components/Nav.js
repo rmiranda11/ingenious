@@ -17,6 +17,7 @@ import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
 import WorkIcon from '@material-ui/icons/Work';
+import DraftsIcon from '@material-ui/icons/Drafts';
 import Link from "@material-ui/core/Link"
 
 import "../public/CSS/Home.css"
@@ -70,19 +71,19 @@ export default function Nav() {
     >
       <List>
           <ListItem>
-            <HomeIcon />
+            <HomeIcon fontSize="large"/>
             <Link clasName="nav-link" href="./" >
                 Home
             </Link>
           </ListItem>
           <ListItem>
-            <WorkIcon />
+            <WorkIcon fontSize="large" />
             <Link clasName="nav-link" href="./services" >
                 Services
             </Link>      
             </ListItem>
           <ListItem>
-            <WorkIcon />
+            <DraftsIcon fontSize="large"/>
             <Link clasName="nav-link" href="./contact" >
                 Contact
             </Link>      

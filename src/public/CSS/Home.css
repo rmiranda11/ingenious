@@ -8,6 +8,7 @@
   background-image: url("https://wallpaperaccess.com/full/1404008.jpg");
   background-repeat: no-repeat;
   background-size:cover;
+  box-shadow: black .1rem .1rem .1rem;
 }
 
 .home-title{
@@ -49,6 +50,10 @@
   left:9em;
 }
 
+.MuiListItem-gutters{
+  font-size:2rem;
+}
+
 .main-intro{
   height:650px;
   background: linear-gradient( rgb(42, 54, 65), #7e7e7e);
@@ -67,11 +72,11 @@
   padding-top:2em;
   font-weight:500;
   font-family: 'Oswald', sans-serif;
-  
+  text-transform: uppercase;
 }
 
 .intro-txt-2{
-  padding:10rem;
+  padding:15rem;
   padding-top:1rem;
   margin-bottom: 3em;
   color:white;
@@ -212,12 +217,18 @@
   width: 70px;
   height: 5px;
   line-height: 1;
-  display: inline-block;
+  display: flex;
   background:yellow;
-  margin: 5px 0 20px;
   margin-top:-4px;
-  margin-left:88.5em;
+  /* margin-left:67.5em; */
   justify-content: right;
+  /* margin-right:5em; */
+  margin: 5px 0 20px;
+  margin:auto;
+  margin-right:0em;
+  margin-top:-4px;
+  margin-bottom: 20px;
+
 }
 
 .footer{
@@ -504,6 +515,7 @@
       top:8em;
       left:9em;
     }
+
     
     .main-intro{
       height:650px;

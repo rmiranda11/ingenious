@@ -3,6 +3,8 @@ var router = express.Router();
 var nodemailer = require('nodemailer');
 var cors = require('cors');
 const creds = require('./constants/config');
+
+// const result = dotenv.config()
 //465
 var transport = {
     host: 'smtp.gmail.com', 
@@ -33,12 +35,12 @@ router.post('/send', (req, res, next) => {
   var phone = req.body.phone
   var email = req.body.email
   var message = req.body.message
-  var content = `name: ${name} \n phone: ${phone} email: ${email} \n message: ${message} `
+  var content = `name: ${name} \n phone: ${phone} \n email: ${email} \n message: ${message} `
 
   var mail = {
     from: name,
-    to: 'rmiranda11@gmail.com', 
-    subject: 'New Message Ingenious Construction Website',
+    to: creds.USER, 
+    subject: 'New Message from Ingenious Construction Website',
     text: content
   }
   transporter.sendMail(mail, (err, data) => {
@@ -52,7 +54,7 @@ router.post('/send', (req, res, next) => {
       })
   
       transporter.sendMail({
-        from: "rmiranda1100@gmail.com",
+        from:creds.USER,
         to: email,
         subject: "Ingenious Construction <Auto reply>",
         text: `Thank you for your message. We will get in contact with you as soon as possible. \n\n Ingenious Construction `

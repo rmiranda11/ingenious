@@ -1,4 +1,8 @@
 module.exports = {
-    USER: 'rmiranda1100@gmail.com', 
-    PASS: 'nkfhqoaigwjgjviu'
+    USER: 'ingeniouscarpentry@gmail.com', 
+    PASS: 'yyrcqerblareivus'
 }
+
+
+// USER: 'rmiranda1100@gmail.com', 
+// PASS: 'nkfhqoaigwjgjviu'

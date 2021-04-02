@@ -40,7 +40,7 @@ const fences = (
     <div className="fences card">
         <h1 className="card-title">Fences</h1>
         <img src="https://www.prolinefencecompany.com/wp-content/uploads/2016/04/fence.jpg"className="card-pic"></img>
-        <p className="card-txt">Encapsulate your backyard for privacy. Aesthetically designed fences will surround your property to make it feel more intimate.</p>    </div>
+        <p className="card-txt">Encapsulate your backyard for privacy. Aesthetically designed fences will surround your property to make it feel more intimate.</p></div>
 )
 
 const Services = () => {
@@ -54,14 +54,14 @@ const Services = () => {
 
     const useStyles = {
         
-        color:"black",
-        fontSize:"1.3rem",
-        width:"6em",
-        height:"3em",
-        fontWeight:700,
-        backgroundColor:"whitesmoke",
-        textAlign:"center",
-        verticalAlign: "middle",
+        // color:"black",
+        // fontSize:"1.3rem",
+        // width:"6em",
+        // height:"3em",
+        // fontWeight:700,
+        // backgroundColor:"whitesmoke",
+        // textAlign:"center",
+        // verticalAlign: "middle",
 
     }
 
@@ -83,25 +83,25 @@ const Services = () => {
                     <div className="services-btn-group">
 
                     <ButtonGroup className="btn-group" size="lg" color="primary">
-                        <Button onClick={()=> handleClick("framing")} size="lg"
-                        style={useStyles}>Framing</Button>
+                        <Button className="service-btn" variant="light" onClick={()=> handleClick("framing")} size="lg"
+                        >Framing</Button>
 
-                        <Button onClick={() => handleClick("decks")} size="lg"
-                        style={useStyles}>Decks</Button>
+                        <Button className="service-btn" variant="light" onClick={() => handleClick("decks")} size="lg"
+                        >Decks</Button>
 
-                        <Button onClick={() => handleClick("porches")} size="lg"
-                        style={useStyles}>Porches</Button>
+                        <Button className="service-btn" variant="light" onClick={() => handleClick("porches")} size="lg"
+                        >Porches</Button>
                     </ButtonGroup>
 
                     <ButtonGroup className="btn-group" size="large" color="primary">
-                        <Button onClick={()=> handleClick("staircase")} size="lg"
-                        style={useStyles}>Staircase</Button>
+                        <Button className="service-btn" variant="dark" onClick={()=> handleClick("staircase")} size="lg"
+                        >Staircase</Button>
 
-                        <Button onClick={() => handleClick("fences")} size="lg" 
-                        style={useStyles}>Fences</Button>
+                        <Button className="service-btn" variant="dark" onClick={() => handleClick("fences")} size="lg" 
+                        >Fences</Button>
                         
-                        <Button onClick={() => handleClick("additions")} size="lg"
-                        style={useStyles}>Additions</Button>
+                        <Button className="service-btn" variant="dark" onClick={() => handleClick("additions")} size="lg"
+                        >Additions</Button>
                     </ButtonGroup>
                     </div>
 
