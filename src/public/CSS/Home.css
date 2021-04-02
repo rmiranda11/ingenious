@@ -1,60 +1,32 @@
 
-
-body{
-  /* margin:0 2em; */
-  /* background: linear-gradient(white, #c27878); */
-}
-
-h3{
-  text-shadow: 0 1px 0 #ccc,
-  0 2px 0 #c9c9c9,
-  0 3px 0 #bbb,
-  0 4px 0 #b9b9b9,
-  0 5px 0 #aaa,
-  0 6px 1px rgba(0,0,0,.1),
-  0 0 5px rgba(0,0,0,.1),
-  0 1px 3px rgba(0,0,0,.3),
-  0 3px 5px rgba(0,0,0,.2),
-  0 5px 10px rgba(0,0,0,.25),
-  0 10px 10px rgba(0,0,0,.2),
-  0 20px 20px rgba(0,0,0,.15);
-  font-size:5rem;
-
-}
-
-.logo{
-  width:50%;
-  position:absolute;
-  top:100px;
-  left:20px;  
-}
-
-.phone{
-  font-size:1.2rem;
-  color:blue;
-  display:flex;
-  justify-content: center;
-  font-weight:bold;
-}
-
+/* ///////// Full Screen //////////////////// */
+@media screen 
+  and (min-device-width: 1200px) {
 .main-img{
+  height: 800px;
   width:100%;
-  height:400px;
-  background-image: url("https://ideaboz.com/wp-content/uploads/2019/02/60-Most-Popular-Modern-Dream-House-Exterior-Design-Ideas-41.jpg");
+  background-image: url("https://wallpaperaccess.com/full/1404008.jpg");
   background-repeat: no-repeat;
   background-size:cover;
-  opacity: 90%;
-  box-shadow: black .3rem .3rem .3rem;
-  /* border-radius: 5%; */
-  /* margin:1em; */
 }
 
-.main-intro{
-  height:750px;
-  background: linear-gradient(rgb(238, 234, 234), #7e7e7e);
-  /* background-image: url("https://i.ibb.co/599hXys/brown-wood-texture-dark-wooden-abstract-background.jpg"); */
+.home-title{
+  margin-top:4em;
+  margin-left:2em;
+  color:white;
+  font-size:4rem;
+  text-shadow:black .2rem .2rem .2rem;
 }
 
+.home-subtitle{
+  color: white;
+  font-size: 2.3rem;
+  font-weight: 450;
+  padding-top:.5em;
+  /* margin-top:2em; */
+  margin-left:3.5em;
+  text-shadow:black .2rem .2rem .2rem;
+}
 
 .home-intro-text{
   width:100%;
@@ -65,115 +37,668 @@ h3{
   font-weight: 500;
 }
 
-.home-title{
-  margin-top:1em;
-  color:white;
-  font-size:3rem;
-  padding:.9em .9em 0;
-  text-shadow:black .2rem .2rem .2rem;
+.MuiButton-containedPrimary{
+  position: relative;
+  top:10em;
+  left:9em;
 }
 
-.home-subtitle{
-  color: white;
-  font-size: 1.3rem;
-  font-weight: 400;
-  padding: 1em .7em .9em;
-  margin-left:1em;
-  text-shadow:black .2rem .2rem .2rem;
+.MuiButton-containedSecondary{
+  position: relative;
+  top:12em;
+  left:9em;
 }
 
-.row-main{
-  margin:.1em;
+.main-intro{
+  height:650px;
+  background: linear-gradient( rgb(42, 54, 65), #7e7e7e);
+  color:black;
+  padding-bottom: 3em;
 }
 
 .intro-txt{
-  padding:.5rem;
-  font-size:1.8rem;
+  padding:0 20rem;
+  font-size:2.5rem;
   word-spacing: 5px;
   text-align: center;
-  color:white;
+  color:whitesmoke;
   letter-spacing: 2px;
   text-shadow: black .1rem .1rem .1rem;
+  padding-top:2em;
+  font-weight:500;
+  font-family: 'Oswald', sans-serif;
   
 }
 
 .intro-txt-2{
-  padding:2rem;
+  padding:10rem;
+  padding-top:1rem;
+  margin-bottom: 3em;
   color:white;
-  font-size:1.5rem;
-  font-weight: 500;
+  font-size:1.55rem;
+  font-weight: 550;
   text-shadow: black .1rem .1rem .1rem;
   text-align: center;
+  word-spacing: 3px;
+  padding-bottom: 2em;
+  font-family: 'Roboto', sans-serif;
 }
 
 .intro-trio{
-  /* background-image: url("https://i.ibb.co/vspnRwr/Trio.png"); */
-  width:101%;
-  padding:1em;
-  margin-top:3em;
-  margin-left:-.4rem;
-}
-
-.main-gradient{
-  height:25px;
-  background: linear-gradient(#eccccc, rgb(128, 37, 37));
-}
-.main-second, .main-fourth, .main-fifth{
-  height:auto;
-  width:100%;
-  border:inset 2px rgb(14, 14, 70);
-
-}
-
-.main-second-over, .main-third-over, .main-fourth-over, .main-fifth-over{
-  height:280px;
-  /* width:50%; */
-  /* position: relative;
-  bottom:60px;
-  left:0; */
-  color:white;
-  background-color: rgb(42, 54, 65);
-  padding:2.2em;
-  opacity: 98%;
-  /* margin-bottom:1em; */
-  border: none inset 2px rgb(14, 14, 70);
-  box-shadow: black 2px 2px 2px;
-}
-
-.main-second-txt, .main-third-title, .main-fourth-title, .main-fifth-title{
-  font-size:1.6rem;
+  width:40%;
+  padding:2em;
+  margin-top:0em;
+  margin:auto;
   display:flex;
   justify-content: center;
 }
 
-.main-second-txt2, .main-third-txt, .main-fourth-txt, .main-fifth-txt{
-  font-size:1.2rem;
-  text-align:start;
+.main-gradient{
+  height:15px;
+  background: linear-gradient(#eccccc, rgb(37, 39, 128));
+
 }
 
-.main-third{
-  width:100%;
+.main-second,.main-third, .main-fourth, .main-fifth{
+  height:90%;
+  width:500px;
   border:inset 2px rgb(14, 14, 70);
 }
 
-.main-third-over{
-  background:rgb(14, 14, 70);
-}
-
-.main-fourth-over{
-  background: rgb(71, 15, 15);
-}
-
-.main-fifth-over{
-  background: rgb(31, 5, 53);
+.main-second-over, .main-third-over, .main-fourth-over, .main-fifth-over{
+  width:inherit;
+  height:inherit;
   color:white;
+  background-color: rgb(42, 54, 65);
+  padding:2.2em;
+  border: none inset 2px rgb(14, 14, 70);
+  /* box-shadow: black 2px 2px 2px; */
+}
+
+.main-second-txt, .main-fourth-title {
+  font-size:2.4rem;
+  display:flex;
+  justify-content: left;
+  text-transform: uppercase;
+  font-weight:600;
+  font-family: 'Oswald', sans-serif;
+}
+
+.main-second-txt2,  .main-fourth-txt {
+  font-size:1.6rem;
+  text-align:start;
+  font-family: 'Roboto', sans-serif;
+  word-wrap: break-word;
+  padding-right:18em;
+}
+
+.main-third-title,.main-fifth-title{
+  text-align: right;
+  font-size:2.4rem;
+  /* display:flex; */
+  text-transform: uppercase;
+  font-weight:600;
+  font-family: 'Oswald', sans-serif;
+}
+
+.main-third-txt, .main-fifth-txt{
+  padding-right:0;
+  padding-left:20em;
+  text-align: right;
+  font-size:1.6rem;
+  font-family: 'Roboto', sans-serif;
+  word-wrap: break-word;
+
+}
+
+
+.main-content{
+  display:flex;
+  height:420px;
+  width:100%;
+  overflow:hidden;
+  white-space: normal;
+  padding: 2em 3em;
+  padding-right:3em;
+  background:rgb(42, 54, 65);
+}
+
+.reverse{
+  flex-direction: row-reverse;
+  padding-right:3em;
+  padding-left:5em;
+  margin-right:3em;
+}
+.nav-drop{
+  background:rgb(42, 54, 65);
+}
+.nav-link{
+  color:white;
+  font-size:2rem;
+}
+
+.ingenious{
+  font-weight: 600;
+  letter-spacing: 8px;
+  margin-left:4em;
+  margin-top:.9em;
+
+}
+
+.accent-bar{
+  width: 70px;
+  height: 5px;
+  line-height: 1;
+  display: inline-block;
+  background:yellow;
+  margin: 5px 0 20px;
+  margin-top:-4px;
+}
+
+.accent-bar-2{
+  width: 320px;
+  height: 5px;
+  line-height: 1;
+  display: flex;
+  justify-content: center;
+  background:yellow;
+  /* margin: 5px 0 20px;
+  margin-top:-4px;
+  margin-left:20em; */
+  margin:auto;
+}
+
+.accent-bar-mastery{
+  width: 70px;
+  height: 5px;
+  line-height: 1;
+  display: inline-block;
+  background:yellow;
+  margin: 5px 0 20px;
+  margin-top:-4px;
+  margin-left:88.5em;
+  justify-content: right;
 }
 
 .footer{
-  height:200px;
+  height:170px;
   background:#252526;
   color:white;
   display:flex;
   justify-content: center;
   align-items: center;
+}
+  }
+/* ///////////////// Desktop End /////////////////////// */
+
+/* ////////// Mobile Screen Media ////////////// */
+@media only screen and (max-device-width: 700px) {
+  
+  .logo{
+    width:50%;
+    position:absolute;
+    top:100px;
+    left:20px;  
+  }
+  
+  .phone{
+    font-size:1.2rem;
+    color:blue;
+    display:flex;
+    justify-content: center;
+    font-weight:bold;
+  }
+  
+  .ingenious{
+    font-weight: 700;
+    letter-spacing: 6px;
+    margin-left:1em;
+    margin-top:1.4em;
+    font-size:.8rem;
+  }
+
+  .main-img{
+    width:100%;
+    height:500px;
+    background-image: url("https://ideaboz.com/wp-content/uploads/2019/02/60-Most-Popular-Modern-Dream-House-Exterior-Design-Ideas-41.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    opacity: 90%;
+    box-shadow: black .3rem .3rem .3rem;
+    /* border-radius: 5%; */
+    /* margin:1em; */
+  }
+  
+  .main-intro{
+    height:850px;
+    /* background: linear-gradient(rgb(238, 234, 234), #7e7e7e); */
+    background-color: rgb(42, 54, 65);
+    font-family: 'Oswald', sans-serif;
+
+    /* color:whitesmoke; */
+  
+    /* background-image: url("https://i.ibb.co/599hXys/brown-wood-texture-dark-wooden-abstract-background.jpg"); */
+  }
+  
+  
+  .home-intro-text{
+    width:100%;
+    color:black;
+    padding:1.5em;
+    font-size:1.8rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  .home-title{
+    margin-top:1em;
+    color:white;
+    font-size:3rem;
+    padding:.9em .9em 0;
+    text-shadow:black .2rem .2rem .2rem;
+  }
+  
+  .home-subtitle{
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 450;
+    padding: 1em .7em .9em;
+    margin-left:1em;
+    text-shadow:black .2rem .2rem .2rem;
+  }
+  
+  .row-main{
+    margin:.1em;
+  }
+  
+  .intro-txt{
+    padding:1rem;
+    font-size:2.3rem;
+    word-spacing: 5px;
+    text-align: center;
+    color:whitesmoke;
+    letter-spacing: 2px;
+    text-shadow: black .1rem .1rem .1rem;
+    padding-top:2em;
+    font-weight:500;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+  }
+  
+  .intro-txt-2{
+    padding:3rem;
+    padding-top:1rem;
+    color:white;
+    font-size:1.35rem;
+    font-weight: 550;
+    text-shadow: black .1rem .1rem .1rem;
+    text-align: center;
+    word-spacing: 3px;
+    padding-bottom: 2em;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+  
+  .intro-trio{
+    width:101%;
+    padding:2em;
+    margin-top:0em;
+    margin-left:-.4rem;
+  }
+  
+  .main-gradient{
+    height:15px;
+    background: linear-gradient(#eccccc, rgb(37, 39, 128));
+  
+  }
+  
+  .main-second, .main-fourth, .main-fifth{
+    height:auto;
+    width:100%;
+    border:inset 2px rgb(14, 14, 70);
+  
+  }
+  
+  .main-second-over, .main-third-over, .main-fourth-over, .main-fifth-over{
+    height:auto;
+    color:white;
+    background-color: rgb(42, 54, 65);
+    padding:2.2em;
+    opacity: 98%;
+    border: none inset 2px rgb(14, 14, 70);
+    box-shadow: black 2px 2px 2px;
+  }
+  
+  .main-second-txt, .main-third-title, .main-fourth-title, .main-fifth-title{
+    font-size:1.6rem;
+    display:flex;
+    justify-content: left;
+    text-transform: uppercase;
+    font-weight:600;
+    font-family: 'Oswald', sans-serif;
+  }
+  
+  .main-second-txt2, .main-third-txt, .main-fourth-txt, .main-fifth-txt{
+    font-size:1.2rem;
+    text-align:start;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+  
+  .main-third{
+    width:100%;
+    border:inset 2px rgb(14, 14, 70);
+  }
+  
+  .main-third-over{
+    background-color: rgb(42, 54, 65);
+    color:whitesmoke;
+  }
+  
+  .main-fourth-over{
+    background-color: rgb(42, 54, 65);
+    color:whitesmoke;
+  
+  }
+  
+  .main-fifth-over{
+    background-color: rgb(42, 54, 65);
+    color:whitesmoke;
+  }
+  
+  .footer{
+    height:170px;
+    background:#252526;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .accent-bar{
+    width: 50px;
+    height: 5px;
+    line-height: 1;
+    display: inline-block;
+    background:yellow;
+    margin: 5px 0 20px;
+    margin-top:-4px;
+  }
+
+  .accent-bar-2{
+    width: 220px;
+    height: 5px;
+    line-height: 1;
+    display: inline-block;
+    background:yellow;
+    margin: 5px 0 20px;
+    margin-top:-4px;
+    margin-left:5em;
+  }
+  
+  .nav-link{
+    font-size:2rem;
+    color:black;
+  
+  }
+  
+  .MuiListItem-gutters{
+    font-size:1.7rem;
+    color:black;
+    padding-left:3em;
+  }
+}
+
+/* /////// End Mobile Media Query //////////////// */
+
+/* ////////// Tablet Media Query //////////////////////// */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    .main-img{
+      height: 800px;
+      width:100%;
+      background-image: url("https://wallpaperaccess.com/full/1404008.jpg");
+      background-repeat: no-repeat;
+      background-size:cover;
+    }
+    
+    .home-title{
+      margin-top:4em;
+      margin-left:2em;
+      color:white;
+      font-size:4rem;
+      text-shadow:black .2rem .2rem .2rem;
+    }
+    
+    .home-subtitle{
+      color: white;
+      font-size: 2.3rem;
+      font-weight: 450;
+      padding-top:.5em;
+      /* margin-top:2em; */
+      margin-left:3.5em;
+      text-shadow:black .2rem .2rem .2rem;
+    }
+    
+    .home-intro-text{
+      width:100%;
+      color:black;
+      padding:1.5em;
+      font-size:1.8rem;
+      text-align: center;
+      font-weight: 500;
+    }
+    
+    .MuiButton-containedPrimary{
+      position: relative;
+      top:7em;
+      left:9em;
+    }
+    
+    .MuiButton-containedSecondary{
+      position: relative;
+      top:8em;
+      left:9em;
+    }
+    
+    .main-intro{
+      height:650px;
+      background: linear-gradient( rgb(42, 54, 65), #7e7e7e);
+      color:black;
+      padding-bottom: 3em;
+    }
+    
+    .intro-txt{
+      padding:0 10rem;
+      font-size:2.5rem;
+      word-spacing: 5px;
+      text-align: center;
+      color:whitesmoke;
+      letter-spacing: 2px;
+      text-shadow: black .1rem .1rem .1rem;
+      padding-top:2em;
+      font-weight:500;
+      font-family: 'Oswald', sans-serif;
+      
+    }
+    
+    .intro-txt-2{
+      padding:10rem;
+      padding-top:1rem;
+      margin-bottom: 3em;
+      color:white;
+      font-size:1.55rem;
+      font-weight: 550;
+      text-shadow: black .1rem .1rem .1rem;
+      text-align: center;
+      word-spacing: 3px;
+      padding-bottom: 2em;
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    .intro-trio{
+      width:40%;
+      padding:2em;
+      margin-top:0em;
+      margin:auto;
+      display:flex;
+      justify-content: center;
+    }
+    
+    .main-gradient{
+      height:15px;
+      background: linear-gradient(#eccccc, rgb(37, 39, 128));
+    
+    }
+    
+    .main-second,.main-third, .main-fourth, .main-fifth{
+      height:90%;
+      width:350px;
+      border:inset 2px rgb(14, 14, 70);
+    }
+    
+    .main-second-over, .main-third-over, .main-fourth-over, .main-fifth-over{
+      width:inherit;
+      /* height:inherit; */
+      color:white;
+      background-color: rgb(42, 54, 65);
+      padding:1em;
+      border: none inset 2px rgb(14, 14, 70);
+      /* box-shadow: black 2px 2px 2px; */
+    }
+    
+    .main-second-txt, .main-fourth-title {
+      font-size:2.4rem;
+      display:flex;
+      justify-content: left;
+      text-transform: uppercase;
+      font-weight:600;
+      font-family: 'Oswald', sans-serif;
+    }
+    
+    .main-second-txt2,  .main-fourth-txt {
+      font-size:1.2rem;
+      text-align:start;
+      font-family: 'Roboto', sans-serif;
+      word-wrap: break-word;
+      padding-right:1em;
+      
+    }
+    
+    .main-third-title,.main-fifth-title{
+      text-align: right;
+      font-size:2.4rem;
+      /* display:flex; */
+      text-transform: uppercase;
+      font-weight:600;
+      font-family: 'Oswald', sans-serif;
+    }
+    
+    .main-third-txt, .main-fifth-txt{
+      padding-right:0;
+      padding-left:12em;
+      text-align: right;
+      font-size:1.2rem;
+      font-family: 'Roboto', sans-serif;
+      word-wrap: break-word;
+    
+    }
+
+    .main-fifth-txt{
+      padding-left:19em;
+
+    }
+    
+    
+    .main-content{
+      display:flex;
+      height:420px;
+      width:100%;
+      overflow:hidden;
+      white-space: normal;
+      padding: 2em 3em;
+      padding-right:3em;
+      background:rgb(42, 54, 65);
+    }
+    
+    .reverse{
+      flex-direction: row-reverse;
+      padding-right:3em;
+      padding-left:2em;
+      margin-right:3em;
+    }
+    .nav-drop{
+      background:rgb(42, 54, 65);
+    }
+    .nav-link{
+      color:white;
+      font-size:2rem;
+    }
+    
+    .ingenious{
+      font-weight: 600;
+      letter-spacing: 8px;
+      margin-left:4em;
+      margin-top:.9em;
+    
+    }
+    
+    .accent-bar{
+      width: 70px;
+      height: 5px;
+      line-height: 1;
+      display: inline-block;
+      background:yellow;
+      margin: 5px 0 20px;
+      margin-top:-4px;
+    }
+    
+    .accent-bar-2{
+      width: 160px;
+      height: 5px;
+      line-height: 1;
+      display: flex;
+      justify-content: center;
+      background:yellow;
+      /* margin: 5px 0 20px;
+      margin-top:-4px;
+      margin-left:20em; */
+      margin:auto;
+    }
+    
+    .accent-bar-mastery{
+      width: 70px;
+      height: 5px;
+      line-height: 1;
+      display: inline-block;
+      background:yellow;
+      margin: 5px 0 20px;
+      margin-top:-4px;
+      margin-left:25.5em;
+      justify-content: right;
+    }
+    
+    .accent-bar-mastery-pad{
+      width: 70px;
+      height: 5px;
+      line-height: 1;
+      display: inline-block;
+      background:yellow;
+      margin: 5px 0 20px;
+      margin-top:-4px;
+      margin-left:35.5em;
+      justify-content: right;
+    }
+    .footer{
+      height:170px;
+      background:#252526;
+      color:white;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+    }
 }

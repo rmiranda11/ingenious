@@ -19,6 +19,8 @@ import HomeIcon from '@material-ui/icons/Home';
 import WorkIcon from '@material-ui/icons/Work';
 import Link from "@material-ui/core/Link"
 
+import "../public/CSS/Home.css"
+
 const useStyles = makeStyles({
   list: {
     width: 250,
@@ -28,6 +30,8 @@ const useStyles = makeStyles({
   },
   root: {
     flexGrow: 1,
+    backgroundColor:"rgb(42, 54, 65)",
+
   },
 //   menuButton: {
 //     marginRight: theme.spacing(2),
@@ -35,6 +39,7 @@ const useStyles = makeStyles({
   title: {
     flexGrow: 1,
   },
+
 });
 
 export default function Nav() {
@@ -66,15 +71,20 @@ export default function Nav() {
       <List>
           <ListItem>
             <HomeIcon />
-            <Link href="./" >
+            <Link clasName="nav-link" href="./" >
                 Home
             </Link>
-            {/* <ListItemText  href="./" primary={"Home"}/> */}
           </ListItem>
           <ListItem>
             <WorkIcon />
-            <Link href="./services" >
+            <Link clasName="nav-link" href="./services" >
                 Services
+            </Link>      
+            </ListItem>
+          <ListItem>
+            <WorkIcon />
+            <Link clasName="nav-link" href="./contact" >
+                Contact
             </Link>      
             </ListItem>
       </List>
@@ -83,14 +93,15 @@ export default function Nav() {
 
   return (
     <div>
-      {['bottom'].map((anchor) => (
+      {['left'].map((anchor) => (
         <React.Fragment key={anchor}>
     <AppBar position="static">
-        <Toolbar style={{background:"black"}}>
+        <Toolbar style={{background:" rgb(42, 54, 65)"}}>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu" onClick={toggleDrawer(anchor, true)}>
             <MenuIcon  />
           </IconButton>
-          <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          <p className="ingenious">INGENIOUS CONSTRUCTION</p>
+          <Button onClick={toggleDrawer(anchor, true)}></Button>
           <Drawer anchor={anchor} open={state[anchor]} onClose={toggleDrawer(anchor, false)}>
             {list(anchor)}
           </Drawer>

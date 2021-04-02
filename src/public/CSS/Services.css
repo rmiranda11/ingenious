@@ -1,41 +1,233 @@
+/* //////////////////////// Desktop Media Query ////////////////////// */
+@media screen 
+  and (min-device-width: 1200px) {
 
+    .row{
+        --bs-gutter-x: 0rem;
+    }
+    .custom-container{
+        padding:0;
+    }
+    
+    body{
+        background:rgb(33, 40, 47);
+    }
+    
+    .services-container::before {    
+        content: "";
+        background-image: url('https://prod.wp.cdn.aws.wfu.edu/sites/224/2020/04/Canva-Blueprint-background-scaled.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.65;
+    }
+    
+    .services-container{
+        margin-top:.5em;
+        position: relative; 
+        /* height: 100vh; */
+        width: 100%;
+        padding:5em;
+    }
+    
+    .services-title{
+        position: relative;
+        font-size:2.9rem;
+        color:white;
+        font-family: 'Oswald', sans-serif;
+        text-shadow: black .1rem .1rem .1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        /* opacity:100; */
+    
+    }
+    
+    .services-sub{
+        position: relative;
+        font-size:1.8rem;
+        color:lightseagreen;
+        font-weight:550;
+        text-shadow: black .1rem .1rem .1rem;
+    }
+
+    .services-intro{
+        position: relative;
+        font-size:1.5rem;
+        color:white;
+        font-family: 'Roboto', sans-serif;
+        text-shadow: black .1rem .1rem .1rem;
+        font-weight: 650;
+        padding-right: 9em;
+    }
+    
+    .services-main{
+        width:100%;
+        height:inherit;
+        padding:2em;
+        display:flex;
+        justify-content: center;
+        color:black;
+        background:rgb(42, 54, 65);
+        text-align:left;
+    }
+    
+    .services-space{
+        height:150px;
+        width:100%;
+        background:rgb(64, 64, 109);
+    }
+    
+    .btn-group-bg{
+        /* background-image:url("https://i.ibb.co/8xqFYCx/wood2.jpg"); */
+        /* background-size: contain; */
+        background: rgb(6, 44, 80);
+        border-top: inset 5px black;
+        border-bottom: none;
+        padding-bottom:1em;
+        display:flex;
+        justify-content: center;
+    }
+
+    .btn-group{
+        margin-top:-1rem;
+        /* text-align: center; */
+        /* display:flex; */
+        /* justify-content: center; */
+        /* margin-bottom:2rem; */
+        /* width:30em; */
+    }
+    
+    .services-btn-group{
+        padding-top: 2em; 
+        /* margin:0 auto; */
+        width:20em;
+        /* margin-top:2em; */
+        
+    }
+
+    .card{
+        width:100%;
+        height:auto;
+        padding:1.2em;
+        background-color: rgb(240, 236, 236);
+        margin:0 15em;
+        border-radius: 5%;
+    }
+    
+    .card-pic{
+        width:100%;
+        height:400px;
+        max-width:590px;
+        display: flex;
+        justify-self: center;
+        margin:0 auto;
+        box-shadow: black .2rem .2rem .2rem;
+    }
+    
+    .card-title{
+        font-size:3.2rem;
+        color:lightseagreen;
+        /* text-shadow: black .1rem .1rem .1rem; */
+        display: flex;
+        justify-content: center;
+        padding:.3em;
+        font-family: 'Oswald', sans-serif;
+        text-transform:uppercase;
+    }
+    
+    .card-txt{
+        font-size:1.5rem;
+        padding:2em;
+        font-family: 'Roboto', sans-serif;
+        margin:0 2.3em;
+    
+    }
+
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+/* //////////////////////////// Desktop End ///////////////////////// */
+  /* //////////////// Mobile Media Query //////////////////// */
+  @media only screen and (max-device-width: 700px) {
+
+
+.row{
+    --bs-gutter-x: 0rem;
+}
 .custom-container{
     padding:0;
 }
-.services-container{
-    background-image:url("https://i.ibb.co/8xqFYCx/wood2.jpg");
+
+
+.services-container::before {    
+    content: "";
+    background-image: url('https://prod.wp.cdn.aws.wfu.edu/sites/224/2020/04/Canva-Blueprint-background-scaled.jpg');
     background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
+}
+
+.services-container{
+    position: relative; 
+    /* height: 100vh; */
+    width: 100%;
     padding:3em;
 }
 
 .services-title{
-    font-size:1.7rem;
-    color:ivory;
+    position: relative;
+    font-size:1.9rem;
+    color:black;
+    font-family: 'Oswald', sans-serif;
+    text-shadow: white .1rem .1rem .1rem;
+    text-transform: uppercase;
+    /* opacity:100; */
+
 }
 
 .services-sub{
-    font-size:1.2rem;
+    position: relative;
+    font-size:1.3rem;
     color:lightseagreen;
-    font-weight:550;
+    font-weight:650;
     text-shadow: black 2px 2px 2px;
 }
 
 .services-intro{
-    font-size:1.1rem;
-    color:linen;
+    position: relative;
+    font-size:1.2rem;
+    color:black;
+    font-family: 'Lato', sans-serif;
+    /* text-shadow: ivory .1rem .1rem .1rem; */
+    font-weight: 550;
 }
 
 .services-main{
     width:100%;
     height:inherit;
-    /* background:rgba(219, 27, 27, 0.493); */
-    /* background-image: url("https://i.ibb.co/G3Mb6mV/aanischaaukamikw-cultural-cree-institute-58150fd2dc96b.jpg"); */
-    background-size:cover;
     padding:2em;
     display:flex;
     justify-content: center;
-    /* opacity:75% */
     color:black;
+    background:rgb(42, 54, 65);
+    text-align:left;
 }
 
 .services-space{
@@ -44,27 +236,44 @@
     background:rgb(64, 64, 109);
 }
 
- .services-btn-group{
+.btn-group-bg{
+    /* background-image:url("https://i.ibb.co/8xqFYCx/wood2.jpg"); */
+    /* background-size: contain; */
+    background: rgb(6, 44, 80);
+    border-top: inset 5px black;
+    border-bottom: none;
+    padding-bottom:1em;
+}
+.btn-group{
+    margin-top:-1rem;
+    text-align: center;
+    width:22em;
+    /* margin-bottom:2rem; */
+}
+
+.services-btn-group{
     margin:1em;
-    width:7em;
-    background:whitesmoke;
+    width:4em;
     justify-self: center;
     flex-wrap: wrap;    
     display: flex;
+    margin-left:.5em;
+    margin-top:2em;
+    
     /* justify-content: center; */
 }
 
 .card{
     width:100%;
     height:auto;
-    padding:2em;
+    padding:1.2em;
+    background-color: rgb(240, 236, 236);
 }
 
 .card-pic{
-    background-image: url("https://i.ibb.co/VSjPCgh/OLYMPUS-DIGITAL-CAMERA.jpg" );
-    background-size: cover;
     width:100%;
     height:200px;
+    max-width: 290px;
 }
 
 .card-title{
@@ -72,13 +281,172 @@
     color:lightseagreen;
     display: flex;
     justify-content: center;
+    padding:.3em;
+    font-family: 'Oswald', sans-serif;
+    text-transform:uppercase;
 }
 
 .card-txt{
-    font-size:1.2rem;
+    font-size:1.3rem;
     padding:1em;
+    font-family: 'Lato', sans-serif;
+
 }
-/* Button{
-    width:7em;
-    display:flex;
-} */
+  
+}
+
+/* ////////////// End Mobile ///////////////////// */
+
+/* ///////////////////////Tablet query start/////////////////// */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    .row{
+        --bs-gutter-x: 0rem;
+    }
+    .custom-container{
+        padding:0;
+    }
+    
+    body{
+        background:rgb(33, 40, 47);
+    }
+    
+    .services-container::before {    
+        content: "";
+        background-image: url('https://prod.wp.cdn.aws.wfu.edu/sites/224/2020/04/Canva-Blueprint-background-scaled.jpg');
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.65;
+    }
+    
+    .services-container{
+        margin-top:.5em;
+        position: relative; 
+        /* height: 100vh; */
+        width: 100%;
+        padding:5em;
+    }
+    
+    .services-title{
+        position: relative;
+        font-size:2.9rem;
+        color:white;
+        font-family: 'Oswald', sans-serif;
+        text-shadow: black .1rem .1rem .1rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        /* opacity:100; */
+    
+    }
+    
+    .services-sub{
+        position: relative;
+        font-size:1.8rem;
+        color:lightseagreen;
+        font-weight:550;
+        text-shadow: black .1rem .1rem .1rem;
+    }
+
+    .services-intro{
+        position: relative;
+        font-size:1.5rem;
+        color:white;
+        font-family: 'Roboto', sans-serif;
+        text-shadow: black .1rem .1rem .1rem;
+        font-weight: 650;
+        padding-right: 2em;
+    }
+    
+    .services-main{
+        width:100%;
+        height:inherit;
+        padding:2em;
+        display:flex;
+        justify-content: center;
+        color:black;
+        background:rgb(42, 54, 65);
+        text-align:left;
+    }
+    
+    .services-space{
+        height:150px;
+        width:100%;
+        background:rgb(64, 64, 109);
+    }
+    
+    .btn-group-bg{
+        /* background-image:url("https://i.ibb.co/8xqFYCx/wood2.jpg"); */
+        /* background-size: contain; */
+        background: rgb(6, 44, 80);
+        border-top: inset 5px black;
+        border-bottom: none;
+        padding-bottom:1em;
+        display:flex;
+        justify-content: center;
+    }
+
+    .btn-group{
+        margin-top:-1rem;
+        /* text-align: center; */
+        /* display:flex; */
+        /* justify-content: center; */
+        /* margin-bottom:2rem; */
+        /* width:30em; */
+    }
+    
+    .services-btn-group{
+        padding-top: 2em; 
+        /* margin:0 auto; */
+        width:20em;
+        /* margin-top:2em; */
+        
+    }
+
+    .card{
+        width:100%;
+        height:auto;
+        padding:1.2em;
+        background-color: rgb(240, 236, 236);
+        margin:0 3em;
+        border-radius: 5%;
+    }
+    
+    .card-pic{
+        width:100%;
+        height:400px;
+        max-width:590px;
+        display: flex;
+        justify-self: center;
+        margin:0 auto;
+        box-shadow: black .2rem .2rem .2rem;
+    }
+    
+    .card-title{
+        font-size:3.2rem;
+        color:lightseagreen;
+        /* text-shadow: black .1rem .1rem .1rem; */
+        display: flex;
+        justify-content: center;
+        padding:.3em;
+        font-family: 'Oswald', sans-serif;
+        text-transform:uppercase;
+    }
+    
+    .card-txt{
+        font-size:1.5rem;
+        padding:2em;
+        font-family: 'Roboto', sans-serif;
+        margin:0 2.3em;
+    
+    }
+
+  }

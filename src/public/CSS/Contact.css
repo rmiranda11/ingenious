@@ -1,0 +1,278 @@
+@media screen 
+  and (min-device-width: 700px) {
+
+    body{
+        margin: 0;
+        padding:0;
+    }
+    
+    .form-control{
+        max-width: 400px;
+        background-color: #ced4da;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    
+    .form-group label{
+        font-size:1.2rem;
+        margin:.5rem;
+        color: #fff;
+    }
+    
+    .contact-header{
+        text-align: center;
+        margin: 0 auto;
+        padding: 40px 0;
+        font: 300 45px 'Oswald', sans-serif;
+        letter-spacing: 6px;
+        color:  #fff;
+    }
+    
+    .contact-txt{
+        margin: 0 auto;
+        text-align: center;
+        padding:20px 0;
+        color: #fff;
+    }
+    .btn{
+        margin-top: 15px;
+        /* height: 34px; */
+        /* width: 100px; */
+        overflow: hidden;
+        transition: all .2s ease-in-out;
+        display: flex;
+    }
+    
+    .contact-list {
+        list-style-type: none;
+        margin: 3em auto;
+      }
+    
+      li{
+          display: flex;
+          justify-content: center;
+
+      }
+      
+      .list-item {
+        line-height: 4;
+        color: #0d6efd;
+      }
+      
+      .contact-text {
+        font: 300 18px 'Lato', sans-serif;
+        letter-spacing: 1.9px;
+        color: #0d6efd;
+        font-size:1.8rem;
+
+      }
+    
+    .accent{
+        width:40px;
+        color:yellow;
+        height:5px;
+    }
+
+    .icon{
+        margin-right:.5em;
+    }
+    
+    .logo{
+        width:70% ;
+        margin-left:7em;
+        margin-bottom:3em;
+    }
+    
+
+  }
+
+
+ /* //////////////// Mobile Media Query //////////////////// */
+ @media only screen and (max-device-width: 700px) {
+
+
+
+body{
+    margin: 0;
+    padding:0;
+}
+
+.form-control{
+    max-width: 400px;
+    background-color: #ced4da;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.form-group label{
+    font-size:1.2rem;
+    margin:.5rem;
+}
+
+.contact-header{
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+    font: 300 45px 'Oswald', sans-serif;
+    letter-spacing: 6px;
+    color: black;
+}
+
+.contact-txt{
+    margin: 0 auto;
+    text-align: center;
+    padding:20px 0;
+}
+.btn{
+    margin-top: 15px;
+    /* height: 34px; */
+    /* width: 100px; */
+    overflow: hidden;
+    transition: all .2s ease-in-out;
+    display: flex;
+}
+
+.contact-list {
+    list-style-type: none;
+
+    margin:auto;
+  }
+
+  li{
+      display: flex;
+      justify-content: center;
+      margin-right:.5em;
+  }
+  
+  .list-item {
+    line-height: 4;
+    color: #0d6efd;
+  }
+  
+  .contact-text {
+    font: 300 18px 'Lato', sans-serif;
+    letter-spacing: 1.9px;
+    color: #0d6efd;
+    font-size:1rem;
+  }
+
+  .icon{
+      margin-right:.5em;
+  }
+
+.accent{
+    width:40px;
+    color:yellow;
+    height:5px;
+}
+
+.logo{
+    width:70% ;
+    margin-left:7em;
+    margin-bottom:3em;
+    position:absolute;
+    bottom:3em;
+    display:none;
+}
+
+
+ }
+
+ /* ///////////////////////// End  Mobile ////////////////// */
+
+/* /////////////////// Tablet Query Start ////////////////////////// */
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+
+    body{
+        margin: 0;
+        padding:0;
+    }
+    
+    .form-control{
+        max-width: 400px;
+        background-color: #ced4da;
+        color: #fff;
+        letter-spacing: 1px;
+    }
+    
+    .form-group label{
+        font-size:1.2rem;
+        margin:.5rem;
+        color: #fff;
+    }
+    
+    .contact-header{
+        text-align: center;
+        margin: 0 auto;
+        padding: 40px 0;
+        font: 300 45px 'Oswald', sans-serif;
+        letter-spacing: 6px;
+        color:  #fff;
+    }
+    
+    .contact-txt{
+        margin: 0 auto;
+        text-align: center;
+        padding:20px 0;
+        color: #fff;
+    }
+    .btn{
+        margin-top: 15px;
+        /* height: 34px; */
+        /* width: 100px; */
+        overflow: hidden;
+        transition: all .2s ease-in-out;
+        display: flex;
+    }
+    
+    .contact-list {
+        list-style-type: none;
+        margin: 3em auto;
+      }
+    
+      li{
+          display: flex;
+          justify-content: center;
+
+      }
+      
+      .list-item {
+        line-height: 4;
+        color: #0d6efd;
+      }
+      
+      .contact-text {
+        font: 300 18px 'Lato', sans-serif;
+        letter-spacing: 1.9px;
+        color: #0d6efd;
+        font-size:1rem;
+
+      }
+    
+    .accent{
+        width:40px;
+        color:yellow;
+        height:5px;
+    }
+
+    .icon{
+        margin-right:.5em;
+    }
+    
+    .logo{
+        width:70% ;
+        margin-left:5em;
+        margin-bottom:3em;
+    }
+
+    .container{
+        margin-bottom: 4em;
+    }
+    
+
+  }
