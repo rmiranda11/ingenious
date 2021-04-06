@@ -241,10 +241,9 @@
   align-items: center;
 }
 
-.foot{
+.footer-txt{
   display: flex;
-  justify-content:center;
-  margin-left:-1em;
+  justify-content: center;
 }
   }
 /* ///////////////// Desktop End /////////////////////// */
@@ -323,6 +322,10 @@
     padding: 1em .7em .9em;
     margin-left:1em;
     text-shadow:black .2rem .2rem .2rem;
+  }
+
+  .MuiButton-containedPrimary{
+    margin-left:2em;
   }
   
   .row-main{
@@ -432,6 +435,11 @@
     justify-content: center;
     align-items: center;
   }
+
+  .footer-txt{
+    display: flex;
+    justify-content: center;
+  }
   
   .accent-bar{
     width: 50px;
@@ -444,14 +452,17 @@
   }
 
   .accent-bar-2{
-    width: 220px;
+    width: 190px;
     height: 5px;
     line-height: 1;
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     background:yellow;
-    margin: 5px 0 20px;
+    /* margin: 5px 0 20px; */
+    margin:0 auto;
     margin-top:-4px;
-    margin-left:5em;
+    /* margin-left:5em; */
+    
   }
   
   .nav-link{
@@ -719,5 +730,10 @@
       display:flex;
       justify-content: center;
       align-items: center;
+    }
+
+    .footer-txt{
+      display: flex;
+      justify-content: center;
     }
 }

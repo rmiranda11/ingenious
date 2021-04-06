@@ -94,13 +94,13 @@ const Services = () => {
                     </ButtonGroup>
 
                     <ButtonGroup className="btn-group" size="large" color="primary">
-                        <Button className="service-btn" variant="dark" onClick={()=> handleClick("staircase")} size="lg"
+                        <Button className="service-btn" variant="light" onClick={()=> handleClick("staircase")} size="lg"
                         >Staircase</Button>
 
-                        <Button className="service-btn" variant="dark" onClick={() => handleClick("fences")} size="lg" 
+                        <Button className="service-btn" variant="light" onClick={() => handleClick("fences")} size="lg" 
                         >Fences</Button>
                         
-                        <Button className="service-btn" variant="dark" onClick={() => handleClick("additions")} size="lg"
+                        <Button className="service-btn" variant="light" onClick={() => handleClick("additions")} size="lg"
                         >Additions</Button>
                     </ButtonGroup>
                     </div>

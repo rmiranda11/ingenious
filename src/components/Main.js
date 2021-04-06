@@ -15,7 +15,7 @@ const Main = () => {
                     <h1 className="home-title">Dream Ingeniously.</h1>
                     <p className="home-subtitle">With the most reliable framing contractor in the entire Chicagoland Area.</p>
                     <Button
-                        href="tel:123-456-7890"
+                        href="tel:773-576-3223"
                         variant="contained"
                         color="primary"
                         size="large"

@@ -248,11 +248,13 @@
     border-top: inset 5px black;
     border-bottom: none;
     padding-bottom:1em;
+    display: flex;
+    justify-self: center;
 }
 .btn-group{
     margin-top:-1rem;
     text-align: center;
-    margin-left:1em;
+    /* margin-left:1em; */
     width:20em;
     /* margin-bottom:2rem; */
 }
@@ -260,10 +262,11 @@
 .services-btn-group{
     margin:1em;
     width:4em;
-    justify-self: center;
     flex-wrap: wrap;    
     display: flex;
-    margin-left:.5em;
+    justify-self: center;
+    /* margin-left:.5em; */
+    margin:0 auto;
     margin-top:2em;
     width:20em;
 

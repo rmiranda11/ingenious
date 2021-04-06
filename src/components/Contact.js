@@ -83,7 +83,7 @@ class Contact extends React.Component {
                         <li className="list-item"><i><span className="contact-text phone"><a href="tel:1-773-576-3223" title="Give me a call">
                             <FontAwesomeIcon icon="phone" className="icon" />(773)576-3223 </a></span></i></li>
 
-                        <li className="list-item"><i><span className="contact-text gmail"><a href="mailto:pedrozavala2005@yahoo.com" title="Send me an email">
+                        <li className="list-item"><i><span className="contact-text contact-email gmail"><a href="mailto:pedrozavala2005@yahoo.com" title="Send me an email">
                             <FontAwesomeIcon icon="envelope" className="icon" />
                  pedrozavala2005@yahoo.com</a></span></i></li>
                     </ul>
