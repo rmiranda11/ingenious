@@ -17,9 +17,6 @@ function App() {
       
           <Nav />
 
-          {/* <Main /> */}
-
-
           <Route exact path={ROUTES.LANDING} component={Main} />
           <Route path={ROUTES.SERVICES} component={Services} />
           <Route path={ROUTES.CONTACT} component={Contact} />

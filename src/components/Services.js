@@ -52,20 +52,6 @@ const Services = () => {
         setButtons(value)
     };
 
-    const useStyles = {
-        
-        // color:"black",
-        // fontSize:"1.3rem",
-        // width:"6em",
-        // height:"3em",
-        // fontWeight:700,
-        // backgroundColor:"whitesmoke",
-        // textAlign:"center",
-        // verticalAlign: "middle",
-
-    }
-
-
 
     return (
         <div className="custom-container container-md">

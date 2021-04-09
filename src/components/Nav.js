@@ -34,9 +34,7 @@ const useStyles = makeStyles({
     backgroundColor:"rgb(42, 54, 65)",
 
   },
-//   menuButton: {
-//     marginRight: theme.spacing(2),
-//   },
+
   title: {
     flexGrow: 1,
   },
