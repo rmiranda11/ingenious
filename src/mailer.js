@@ -76,7 +76,7 @@ const app = express()
 app.get('/_ah/warmup', (req, res) => {
   // Handle your warmup logic. Initiate db connection, etc.
 });
-app.get('/', handler);
+// app.get('/', handler);
 
 app.use(cors())
 app.use(express.json())
