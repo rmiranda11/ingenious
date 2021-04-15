@@ -2,8 +2,8 @@ runtime: nodejs14 # or another supported version
 env: flex
 # instance_class: F1
 
-inbound_services:
-- warmup
+# inbound_services:
+# - warmup
 # skip_files : .env
     # manual_scaling:
     #   instances: 1
