@@ -2,11 +2,9 @@ runtime: nodejs
 env: flex
 instance_class: F1
 
-# inbound_services:
-# - warmup
-# skip_files : .env
-    # manual_scaling:
-    #   instances: 1
+inbound_services:
+- warmup
+
 
 # env_variables:
 #   BUCKET_NAME: "example-gcs-bucket"
