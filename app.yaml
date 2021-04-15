@@ -1,9 +1,10 @@
 runtime: nodejs14 # or another supported version
+env: standard
+instance_class: F1
 
-instance_class: F2
-
-    manual_scaling:
-      instances: 1
+# skip_files : .env
+    # manual_scaling:
+    #   instances: 1
 
 # env_variables:
 #   BUCKET_NAME: "example-gcs-bucket"
