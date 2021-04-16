@@ -6,15 +6,15 @@ inbound_services:
 - warmup
 
 
-teps:
-- name: node:15.8.0
-  entrypoint: npm
-  args: ["install"]
-- name: node:15.8.0
-  entrypoint: npm
-  args: ["run", "create-env"]
-  env:
-    - 'REACT_APP_USER=${_MY_SECRET_KEY}'
-- name: "gcr.io/cloud-builders/gcloud"
-  args: ["app", "deploy"]
-timeout: "1600s"
+# teps:
+# - name: node:15.8.0
+#   entrypoint: npm
+#   args: ["install"]
+# - name: node:15.8.0
+#   entrypoint: npm
+#   args: ["run", "create-env"]
+#   env:
+#     - 'REACT_APP_USER=${_MY_SECRET_KEY}'
+# - name: "gcr.io/cloud-builders/gcloud"
+#   args: ["app", "deploy"]
+# timeout: "1600s"
