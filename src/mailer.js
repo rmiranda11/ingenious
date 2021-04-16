@@ -12,8 +12,8 @@ var transport = {
     port: 587,
     secure: false,
     auth: {
-        user: process.env.USER,
-        pass: process.env.PASS
+        user: process.env.REACT_APP_USER,
+        pass: process.env.REACT_APP_PASS
   },
     tls: {
         // do not fail on invalid certs
@@ -40,7 +40,7 @@ router.post('/send', (req, res, next) => {
 
   var mail = {
     from: name,
-    to: process.env.USER, 
+    to: process.env.REACT_APP_USER, 
     subject: 'New Message from Ingenious Construction Website',
     text: content
   }
@@ -55,7 +55,7 @@ router.post('/send', (req, res, next) => {
       })
   
       transporter.sendMail({
-        from:process.env.USER,
+        from:process.env.REACT_APP_USER,
         to: email,
         subject: "Ingenious Construction <Auto reply>",
         text: `Thank you for your message. We will get in contact with you as soon as possible.\n ${name} \n${message}  \n\n Ingenious Construction `
