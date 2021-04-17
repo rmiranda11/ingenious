@@ -71,11 +71,10 @@ router.post('/send', (req, res, next) => {
 })
 
 
-
 const app = express()
-app.get('/_ah/warmup', (req, res) => {
-  // Handle your warmup logic. Initiate db connection, etc.
-});
+// app.get('/_ah/warmup', (req, res) => {
+//   // Handle your warmup logic. Initiate db connection, etc.
+// });
 // app.get('/', handler);
 
 app.use(cors())
