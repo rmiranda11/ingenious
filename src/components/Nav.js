@@ -70,19 +70,19 @@ export default function Nav() {
       <List>
           <ListItem>
             <HomeIcon fontSize="large"/>
-            <Link clasName="nav-link" href="./" >
+            <Link className="nav-link" href="./" >
                 Home
             </Link>
           </ListItem>
           <ListItem>
             <WorkIcon fontSize="large" />
-            <Link clasName="nav-link" href="./services" >
+            <Link className="nav-link" href="./services" >
                 Services
             </Link>      
             </ListItem>
           <ListItem>
             <DraftsIcon fontSize="large"/>
-            <Link clasName="nav-link" href="./contact" >
+            <Link className="nav-link" href="./contact" >
                 Contact
             </Link>      
             </ListItem>
