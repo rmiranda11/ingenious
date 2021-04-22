@@ -23,6 +23,8 @@ class Contact extends React.Component {
             email: '',
             message: ''
         }
+
+        this.handleSubmit = this.handleSubmit.bind(this)
     }
 
     handleSubmit(e) {
@@ -54,7 +56,7 @@ class Contact extends React.Component {
                 <h5 className="contact-txt">Leave us a message and we will get back to you as soon as we can!</h5>
                 <div className="row">
                 <div className="col-sm-6 col-lg-6">
-                    <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+                    <form id="contact-form" onSubmit={this.handleSubmit} method="POST">
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
                             <input type="text" name="name" className="form-control" id="name" value={this.state.name} onChange={this.onNameChange.bind(this)} />
