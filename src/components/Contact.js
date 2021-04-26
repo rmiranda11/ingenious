@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from "@fortawesome/fontawesome-svg-core";
 
 import { faUser, faPhone, faEnvelope, faMapMarker } from "@fortawesome/free-solid-svg-icons";
-// import Button from 'react-bootstrap/Button';
+import Button from 'react-bootstrap/Button';
 
 
 library.add(faUser, faPhone, faEnvelope, faMapMarker);
@@ -73,7 +73,7 @@ class Contact extends React.Component {
                             <label htmlFor="message">Message</label>
                             <textarea className="form-control" name="message" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
                         </div>
-                        <button type="submit" name="submit" size="lg" className="btn btn-primary">Submit</button>
+                        <Button type="submit" name="submit" size="lg" className="btn btn-primary">Submit</Button>
                     </form>
                 </div>
                 <div className="col-sm-6 col-lg-6">

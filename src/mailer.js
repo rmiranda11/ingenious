@@ -77,7 +77,8 @@ const app = express()
 // });
 // app.get('/', handler);
 
-app.use(cors())
+// app.use(cors())
+app.use(cors({origin: 'http://localhost:8080'}));
 app.use(express.json())
 app.use('/', router)
 app.listen(8080)
