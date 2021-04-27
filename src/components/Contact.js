@@ -31,7 +31,7 @@ class Contact extends React.Component {
         e.preventDefault();
         axios({
             method: "POST",
-            url: "/send",
+            url: "ingeniouscarpentry.com/send",
             data: this.state
         }).then((response) => {
             if (response.data.status === 'success') {
@@ -73,7 +73,7 @@ class Contact extends React.Component {
                             <label htmlFor="message">Message</label>
                             <textarea className="form-control" name="message" rows="5" id="message" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
                         </div>
-                        <Button type="button" onClick={this.handleSubmit} name="submit" size="lg" className="btn btn-primary">Submit</Button>
+                        <Button type="submit" name="submit" size="lg" className="btn btn-primary">Submit</Button>
                     </form>
                 </div>
                 <div className="col-sm-6 col-lg-6">
