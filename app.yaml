@@ -1,9 +1,9 @@
-runtime: nodejs
+runtime: nodejs15
 env: flex
 instance_class: F1
 
-# inbound_services:
-# - warmup
+inbound_services:
+- warmup
 
 
 # teps:
