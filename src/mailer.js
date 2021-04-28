@@ -73,7 +73,7 @@ router.post('/send', (req, res, next) => {
 
 const app = express()
 var corsOptions = {
-  origin: 'http://ingeniouscarpentry.com',
+  origin: 'http://localhost:8080/send',
   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 }
 
