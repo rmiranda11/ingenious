@@ -72,9 +72,18 @@ router.post('/send', (req, res, next) => {
 
 
 const app = express()
+// app.use(cors());
+
+var corsOptions = {
+  origin: 'http://ingeniouscarpentry.com',
+  optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
+}
+
+app.use('/send', cors(corsOptions), function (req, res, next) {
+  res.json({msg: 'This is CORS-enabled for only example.com.'})
+})
 
 app.use(express.json())
-app.use('/send', router)
-app.use(cors());
+// app.use('/send', router)
 app.listen(8080)
 
