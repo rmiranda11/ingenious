@@ -32,6 +32,19 @@ transporter.verify((error, success) => {
 });
 
 router.post('/send', (req, res, next) => {
+
+})
+
+
+const app = express()
+
+app.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "https://ingeniouscarpentry.com/send"); // update to match the domain you will make the request from
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
+app.post('/send', function(req, res, next) {
   var name = req.body.name
   var phone = req.body.phone
   var email = req.body.email
@@ -44,7 +57,7 @@ router.post('/send', (req, res, next) => {
     subject: 'New Message from Ingenious Construction Website',
     text: content
   }
-  
+
   transporter.sendMail(mail, (err, data) => {
     if (err) {
       res.json({
@@ -68,21 +81,7 @@ router.post('/send', (req, res, next) => {
         }
       });
     }
-  })
-})
-
-
-const app = express()
-
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "https://ingeniouscarpentry.com/contact"); // update to match the domain you will make the request from
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
-
-app.get('/', function(req, res, next) {
-  // Handle the get for this route
-});
+  }) });
 
 app.use(express.json())
 // app.use('/send', router)
