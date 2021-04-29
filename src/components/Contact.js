@@ -31,7 +31,7 @@ class Contact extends React.Component {
         e.preventDefault();
         axios({
             method: "POST",
-            url: "https://ingeniouscarpentry.com/send",
+            url: "https://ingeniouscarpentry.com/contact/send",
             data: this.state
         }).then((response) => {
             if (response.data.status === 'success') {
