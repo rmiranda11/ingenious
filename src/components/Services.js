@@ -5,47 +5,47 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 
 import "../public/CSS/Services.css"
 
-const framing = (
-    <div className="framing card">
-        <h1 className="card-title">Framing</h1>
-        <img src="https://i.ibb.co/VSjPCgh/OLYMPUS-DIGITAL-CAMERA.jpg"className="card-pic"></img>
-        <p className="card-txt">Building to last is what we take pride in. We accommodate to a big range of job requirements. You pick the design and we'll execute it for you. Using either balloon or platform styles of framing we will accomplish the task.</p>
+const single = (
+    <div className="single card">
+        <h1 className="card-title">Single</h1>
+        <img src="https://www.homestratosphere.com/wp-content/uploads/2018/02/single-family-detached-home.jpg"className="card-pic"></img>
+        <p className="card-txt">Single Family (Detached) Homes are by far the most popular. Around 70% of families in the US live in Single Family Homes. We will build your single family home exactly the way you want it. </p>
     </div>
 )
-const decks = (
-    <div className="decks card">
-        <h1 className="card-title">Decks</h1>
-        <img src="https://i.pinimg.com/originals/1d/34/2b/1d342bd44c30a84078c9db032dce6126.jpg"className="card-pic"></img>
-        <p className="card-txt">Harvest the warm season with barbeques on your own deck. Custom built decks designed precisely to fit your space.  </p>    </div>
+const townhome = (
+    <div className="townhome card">
+        <h1 className="card-title">Townhome</h1>
+        <img src="https://www.homestratosphere.com/wp-content/uploads/2018/02/townhome-row-nyc-hs.jpg"className="card-pic"></img>
+        <p className="card-txt">Townhomes typically share 1 or 2 walls and can rise up to 2-3 stories high. They are popular in urban areas where large property sizes can cost a fortune. They are a single family home except they are attached to another.</p>    </div>
 )
-const porches = (
+const bungalow = (
     <div className="porches card">
-        <h1 className="card-title">Porches</h1>
-        <img src="https://www.beracahhomes.com/sites/default/files/Wraparound2.jpg"className="card-pic"></img>
-        <p className="card-txt">Wrap-around porches are in right now. The best long lasting porches are made with oak or cedar. Call us to design your porch today! </p>    </div>
+        <h1 className="card-title">Bungalow</h1>
+        <img src="https://assets.agentfire3.com/uploads/sites/43/2019/05/2019-05-07-Chicago-Bungalow.jpg"className="card-pic"></img>
+        <p className="card-txt">The word Bungalow is derived from the Indian term "Bengali House". They are smaller cozier homes with large porches desgined to keep property costs down. They are great investments and popular in large cities. </p>    </div>
 )
-const staircase = (
+const ranch = (
     <div className="stairs card">
-        <h1 className="card-title">Staircase</h1>
-        <img src="https://cdn.nar.realtor/sites/default/files/styles/inline_paragraph_image/public/blog_migration_files/2/2018/11/LJS-Pic-Circular-1.jpg?itok=lnPNcTu3"className="card-pic"></img>
-        <p className="card-txt">We build beautiful staircases anywhere in the house in any style. Outdoors or indoors, we will build you the stairway to heaven.</p>    </div>
+        <h1 className="card-title">Ranch Style</h1>
+        <img src="https://www.homestratosphere.com/wp-content/uploads/2018/02/ranch-style-home-hs.jpg"className="card-pic"></img>
+        <p className="card-txt">A ranch style home is a large single-story home with a wide rectangular design. They are based from Spanish haciendas. They are very popular in open areas with big lots of land. </p>    </div>
 )
-const additions = (
-    <div className="additions card">
-        <h1 className="card-title">Additions</h1>
-        <img src="https://images.ctfassets.net/79nimht05j33/6lOnGRf7aWzOYtcOC5jKOc/c0cbc1127bf87d5ef4ca6c86a0fe9623/homeadditions.jpg?w=1500&q=70"className="card-pic"></img>
-        <p className="card-txt">Enhance your home into the dream house you've always wanted with an amazing addition. Expand your property and raise the value all at once. </p>    </div>
+const multi = (
+    <div className="multi card">
+        <h1 className="card-title">Multi-Family Home</h1>
+        <img src="https://www.homestratosphere.com/wp-content/uploads/2018/02/multi-family-house-hs.jpg"className="card-pic"></img>
+        <p className="card-txt">Multi-family homes have two or more housing units. It's detached from any other properties and are a great investments because of its inventive use of space.</p>    </div>
 )
-const fences = (
+const mansion = (
     <div className="fences card">
-        <h1 className="card-title">Fences</h1>
-        <img src="https://www.prolinefencecompany.com/wp-content/uploads/2016/04/fence.jpg"className="card-pic"></img>
-        <p className="card-txt">Encapsulate your backyard for privacy. Aesthetically designed fences will surround your property to make it feel more intimate.</p></div>
+        <h1 className="card-title">Mansion</h1>
+        <img src="https://www.homestratosphere.com/wp-content/uploads/2018/02/mansion-mill-neck-manor.jpg"className="card-pic"></img>
+        <p className="card-txt">Mansions are typically no less than 12,500 sq ft in size but can range to incredible sizes. They are typically built on large lots in suburban areas.  Build your dream house with us!</p></div>
 )
 
 const Services = () => {
 
-    const [buttons, setButtons] = useState("framing")
+    const [buttons, setButtons] = useState("single")
 
 
     const handleClick = value => {
@@ -69,25 +69,25 @@ const Services = () => {
                     <div className="services-btn-group">
 
                     <ButtonGroup className="btn-group" size="lg" color="primary">
-                        <Button className="service-btn" variant="light" onClick={()=> handleClick("framing")} size="lg"
-                        >Framing</Button>
+                        <Button className="service-btn" variant="light" onClick={()=> handleClick("single")} size="lg"
+                        >Single</Button>
 
-                        <Button className="service-btn" variant="light" onClick={() => handleClick("decks")} size="lg"
-                        >Decks</Button>
+                        <Button className="service-btn" variant="light" onClick={() => handleClick("townhome")} size="lg"
+                        >Townhome</Button>
 
-                        <Button className="service-btn" variant="light" onClick={() => handleClick("porches")} size="lg"
-                        >Porches</Button>
+                        <Button className="service-btn" variant="light" onClick={() => handleClick("bungalow")} size="lg"
+                        >Bungalow</Button>
                     </ButtonGroup>
 
                     <ButtonGroup className="btn-group" size="large" color="primary">
-                        <Button className="service-btn" variant="light" onClick={()=> handleClick("staircase")} size="lg"
-                        >Staircase</Button>
+                        <Button className="service-btn" variant="light" onClick={()=> handleClick("ranch")} size="lg"
+                        >Ranch</Button>
 
-                        <Button className="service-btn" variant="light" onClick={() => handleClick("fences")} size="lg" 
-                        >Fences</Button>
+                        <Button className="service-btn" variant="light" onClick={() => handleClick("multi")} size="lg" 
+                        >Multi</Button>
                         
-                        <Button className="service-btn" variant="light" onClick={() => handleClick("additions")} size="lg"
-                        >Additions</Button>
+                        <Button className="service-btn" variant="light" onClick={() => handleClick("mansion")} size="lg"
+                        >Mansion</Button>
                     </ButtonGroup>
                     </div>
 
@@ -95,12 +95,12 @@ const Services = () => {
                     <div className="row">
                         <div className="col-sm-12">
                         <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="700" className="services-main">
-                            {buttons === "framing" && framing}
-                            {buttons === "decks" && decks}
-                            {buttons === "porches" && porches}
-                            {buttons === "staircase" && staircase}
-                            {buttons === "additions" && additions}
-                            {buttons === "fences" && fences}
+                            {buttons === "single" && single}
+                            {buttons === "townhome" && townhome}
+                            {buttons === "bungalow" && bungalow}
+                            {buttons === "ranch" && ranch}
+                            {buttons === "multi" && multi}
+                            {buttons === "mansion" && mansion}
                         </div>
                         </div>
                     </div>
