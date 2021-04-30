@@ -86,5 +86,5 @@ app.post('/send', function(req, res, next) {
 
 app.use(express.json())
 app.use('/send', router)
-// app.listen(8080)
+app.listen(8080)
 
