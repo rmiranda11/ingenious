@@ -31,9 +31,9 @@ transporter.verify((error, success) => {
   }
 });
 
-router.post('/send', (req, res, next) => {
+// router.post('/send', (req, res, next) => {
 
-})
+// })
 
 
 const app = express()  
@@ -85,6 +85,6 @@ app.post('/send', function(req, res, next) {
   }) });
 
 app.use(express.json())
-// app.use('/send', router)
-app.listen(8080)
+app.use('/send', router)
+// app.listen(8080)
 
