@@ -36,7 +36,7 @@ transporter.verify((error, success) => {
 //   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 // }
 
-router.post('/send', cors(), (req, res, next) => {
+router.post('/send', (req, res, next) => {
   var name = req.body.name
   var phone = req.body.phone
   var email = req.body.email
@@ -76,11 +76,11 @@ router.post('/send', cors(), (req, res, next) => {
 })
 
 const app = express()
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://ingeniouscarpentry.com"); // update to match the domain you will make the request from
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+// app.use(function(req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "http://ingeniouscarpentry.com"); // update to match the domain you will make the request from
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   next();
+// });
 
 // const cors = require('cors');
 const corsOptions ={
