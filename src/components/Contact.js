@@ -89,7 +89,7 @@ class Contact extends React.Component {
                             <FontAwesomeIcon icon="envelope" className="icon" />
                  pedrozavala2005@yahoo.com</a></span></i></li>
                     </ul>
-                    {/* <img className="logo" src="https://i.ibb.co/0D06zWB/Ingenious-Logo.jpg" ></img> */}
+                    <img className="logo" src="https://i.ibb.co/0D06zWB/Ingenious-Logo.jpg" ></img>
                 </div>
                 </div>
             </div>
