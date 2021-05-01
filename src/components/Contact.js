@@ -31,8 +31,7 @@ class Contact extends React.Component {
         e.preventDefault();
         axios({
             method: "POST",
-            baseURL: 'https://ingeniouscarpentry.com/contact',
-            url: "/send",
+            url: "http://localhost:8080/send",
             data: this.state
         }).then((response) => {
             if (response.data.status === 'success') {
@@ -90,7 +89,7 @@ class Contact extends React.Component {
                             <FontAwesomeIcon icon="envelope" className="icon" />
                  pedrozavala2005@yahoo.com</a></span></i></li>
                     </ul>
-                    <img className="logo" src="https://i.ibb.co/0D06zWB/Ingenious-Logo.jpg" ></img>
+                    {/* <img className="logo" src="https://i.ibb.co/0D06zWB/Ingenious-Logo.jpg" ></img> */}
                 </div>
                 </div>
             </div>
