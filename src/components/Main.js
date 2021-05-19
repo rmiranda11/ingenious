@@ -35,7 +35,7 @@ const Main = () => {
                 <div className="col-sm-12">
                     <div className="main-intro">
                         <p className="intro-txt">Planning, Building, & Succeeding </p><span className="accent-bar-2"></span>
-                        <img className="intro-trio" src="https://i.ibb.co/phHBp03/main-img.png" ></img>
+                        <img className="intro-trio" src="https://i.ibb.co/6Jq0k5G/newTrio.png" ></img>
                         <p className="intro-txt-2">With over 25 years of experience our carpenters offer an elevated quality of work that is built to last. Using traditional practices that have been proven to work, Ingenious Construction executes the biggest projects efficiently in a timely manner.</p>
                     </div>
                 </div>

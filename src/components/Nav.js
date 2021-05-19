@@ -25,16 +25,18 @@ import "../public/CSS/Home.css"
 const useStyles = makeStyles({
   list: {
     width: 250,
+    color:"darkblue"
   },
   fullList: {
     width: 'auto',
+    color:"red"
+
   },
   root: {
     flexGrow: 1,
     backgroundColor:"rgb(42, 54, 65)",
-
   },
-
+  
   title: {
     flexGrow: 1,
   },

@@ -64,13 +64,13 @@
 
 .intro-txt{
   padding:0 20rem;
-  font-size:2.5rem;
+  font-size:3.1rem;
   word-spacing: 5px;
   text-align: center;
   color:whitesmoke;
   letter-spacing: 2px;
   text-shadow: black .1rem .1rem .1rem;
-  padding-top:2em;
+  padding-top:1em;
   font-weight:500;
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -179,8 +179,12 @@
   background:rgb(42, 54, 65);
 }
 .nav-link{
-  color:white;
-  font-size:2rem;
+  color:silver;
+  font-size:1.6rem;
+}
+
+.MuiTypography-colorPrimary{
+  color:red;
 }
 
 .ingenious{
@@ -202,7 +206,7 @@
 }
 
 .accent-bar-2{
-  width: 320px;
+  width: 370px;
   height: 5px;
   line-height: 1;
   display: flex;
