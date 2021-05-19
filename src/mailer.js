@@ -84,7 +84,7 @@ const app = express()
 
 // const cors = require('cors');
 const corsOptions ={
-    origin:'http://ingeniouscarpentry.com', 
+    origin:'http://ingeniouscarpentry.com/', 
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
