@@ -85,8 +85,8 @@ const app = express()
 // const cors = require('cors');
 const corsOptions ={
     origin:'http://ingeniouscarpentry.com/', 
-    methods:"POST",
-    allowedHeaders:"Accept,Content-Type,X-Requested-With,x-api-key",
+    methods:"POST, GET, OPTIONS, DELETE" ,
+    allowedHeaders:"Accept,Origin,Content-Type,X-LS-CORS-Template,X-LS-Auth-Token,X-LS-Auth-User-Token,Content-Type,X-LS-Sync-Result,X-LS-Sequence,token",
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
