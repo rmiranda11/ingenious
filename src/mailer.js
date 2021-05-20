@@ -86,7 +86,7 @@ const app = express()
 const corsOptions ={
     origin:'http://ingeniouscarpentry.com/', 
     methods:"POST",
-    allowedHeaders:"Content-Type",
+    allowedHeaders:"Accept,Content-Type,X-Requested-With,x-api-key",
     credentials:true,            //access-control-allow-credentials:true
     optionSuccessStatus:200
 }
@@ -97,3 +97,6 @@ app.use(express.json())
 app.use('/', router)
 app.listen(8080)
 
+
+
+//--use forever mailer.js in node to keep server running 
