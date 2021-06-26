@@ -68,7 +68,7 @@ const Services = () => {
                 <div className="col-sm-12 btn-group-bg">
                     <div className="services-btn-group">
 
-                    <ButtonGroup className="btn-group" size="lg" color="primary">
+                    <ButtonGroup className="btn-group"  color="primary">
                         <Button className="service-btn" variant="light" onClick={()=> handleClick("single")} size="lg"
                         >Single</Button>
 
@@ -79,7 +79,7 @@ const Services = () => {
                         >Bungalow</Button>
                     </ButtonGroup>
 
-                    <ButtonGroup className="btn-group" size="large" color="primary">
+                    <ButtonGroup className="btn-group"  color="primary">
                         <Button className="service-btn" variant="light" onClick={()=> handleClick("ranch")} size="lg"
                         >Ranch</Button>
 

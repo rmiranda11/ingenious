@@ -100,10 +100,12 @@
         width:20em;
     }
     
+
+
     .services-btn-group{
         padding-top: 2em; 
         /* margin:0 auto; */
-        width:20em;
+        /* width:22em; */
         /* margin-top:2em; */
         
     }
@@ -149,6 +151,15 @@
     .service-btn:hover{
         background-color: rgb(180, 163, 251);
        
+    }
+
+    .service-btn{
+       /* width:8em; */
+        padding:1em;
+        font-size:1.2rem;
+        font-weight:550;
+        text-align:center;
+
     }
 
     
@@ -275,6 +286,7 @@
 
 .service-btn{
     width:20em;
+    font-size:.9rem;
 }
 
 .card{
