@@ -8,6 +8,10 @@ const cors = require("cors");
 const app = express();
 
 
+const corsOptions = {
+  origin: 'http://www.ingeniouscarpentry.com/',
+}
+
 
 //465
 var transport = {
@@ -61,7 +65,9 @@ app.use(function(req, res, next) {
   }
 });
 
-router.post('/send',  (req, res, next) => {
+app.options('*', cors())
+
+router.post('/send', cors(corsOptions), (req, res, next) => {
   var name = req.body.name
   var phone = req.body.phone
   var email = req.body.email
