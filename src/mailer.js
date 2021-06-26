@@ -53,6 +53,7 @@ transporter.verify((error, success) => {
 // app.use(cors(corsOptions));
 
 app.use(function(req, res, next) {
+  console.log(res.header)
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Origin', 'http://www.ingeniouscarpentry.com/contact');
   
