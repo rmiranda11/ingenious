@@ -3,7 +3,10 @@ require('dotenv').config({ path: path.resolve(__dirname, '../.env') });
 var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
-var cors = require('cors');
+// var cors = require('cors');
+const cors = require("cors");
+const app = express();
+
 
 
 //465
@@ -31,12 +34,21 @@ transporter.verify((error, success) => {
   }
 });
 
-// var corsOptions = {
-//   origin: "http://localhost:8080/send",
-//   optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
-// }
 
-router.post('/send', cors(), (req, res, next) => {
+const allowedOrigins = ['http://www.ingeniouscarpentry.com', 'http://www.fridgelyfe.com/']
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (allowedOrigins.indexOf(origin) !== -1) {
+      callback(null, true)
+    } else {
+      callback(new Error('Not allowed by CORS'))
+    }
+  }
+}
+
+app.use(cors(corsOptions));
+
+router.post('/send',  (req, res, next) => {
   var name = req.body.name
   var phone = req.body.phone
   var email = req.body.email
@@ -76,14 +88,14 @@ router.post('/send', cors(), (req, res, next) => {
 })
 
 const app = express()
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
-     next();
-});
+// app.use(function(req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   res.header('Access-Control-Allow-Methods', 'PUT, POST, GET, DELETE, OPTIONS');
+//      next();
+// });
 
-app.use(cors())
+// app.use(cors())
 app.use(express.json())
 app.use('/', router)
 app.listen(8080)
