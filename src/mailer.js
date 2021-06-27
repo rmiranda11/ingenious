@@ -55,7 +55,7 @@ transporter.verify((error, success) => {
 app.use(function(req, res, next) {
   console.log(res.header)
   res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Origin', 'http://www.ingeniouscarpentry.com/contact');
+  res.header('Access-Control-Allow-Origin', 'http://www.ingeniouscarpentry.com/send');
   
   res.header('Access-Control-Allow-Origin', 'allow all');
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,PATCH,OPTIONS');
